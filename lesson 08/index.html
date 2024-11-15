@@ -63,20 +63,28 @@
     <table>
       <caption>My Daily Schedule</caption>
       <thead>
-      <th>Time</th>
-      <th>Activity</th></thead>
+        <th>&nbsp;</th>
+      <th scope="col">Time</th>
+      <th scope="col">Activity</th></thead>
       <tbody>
-      <tr><td>
+      <tr>
+        <th scope="row">Morning</th><td>
         <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
       </td><td>Write Code</td></tr>
-      <tr><td>
+      <tr>
+        <th scope="row">Break</th><td>
         <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
       </td><td> Eat Lunch</td></tr>
-      <tr><td>
+      <tr scope="row"> <th>Afternoon</th><td>
         <time datetime="12:00">12pm</time>-<time datetime="17:00">5pm</time>
       </td><td>Study for other Courses</td></tr>
-      <tr><td rowspan="2">All Other Times</td> <td>Free time</td> </tr>
-      <tr><td>Sleep</td></tr></tbody>
+      <tr><th scope="row">Evening</th><td rowspan="2">All Other Times</td> <td>Free time</td> </tr>
+      <tr><th scope="row">Night</th><td>Sleep</td></tr></tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">And this is what I do through out the five days in the week. Eat, sleep, code, other stuff and repeat.</td>
+        </tr>
+      </tfoot>
     </table>
   </section>
 
