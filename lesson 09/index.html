@@ -168,8 +168,49 @@
         </h2>
         <p>I'd like to know what you think!</p>
         <form action="http://httpbin.org/get" method="get">
+          <p>
           <label for="firstName">First Name:</label>
-          <input type="text" name="firstName" id="firstName">
+          <input type="text" name="firstName" id="firstName" autocomplete="on" required autofocus="true" placeholder="Hubert"></p>
+          <p>
+          <label for="lastName">Last Name:</label>
+          <input type="text" name="lastName" id="lastName" autocomplete="on" required  placeholder="Ocran"></p>
+          <p>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required  placeholder="your secret"></p>
+            <p>
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" required  placeholder="020000000"
+            pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+            ></p>
+            <p>
+            <label for="decade">Favorite Decade:</label>
+            <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="2000"
+            ></p>
+            <p>
+              <label for="coffee">Favorite Coffee:</label>
+              <select name="coffee" id="coffee" size="2" multiple>
+                <optgroup label="Coffees">
+                <option value="regular coffee">Regular Coffee</option>
+                <option value="iced coffee">Iced Coffee</option></optgroup>
+                <optgroup label="Espresso Drinks">
+                <option value="latte">Latte</option>
+                <option value="cappuccino" selected>Cappuccino</option>
+                <option value="americano">Americano</option></optgroup>
+                <option value="others">Others</option>
+              </select>
+            </p>
+            <p><label for="coffee">Favorite Coffee2:</label>
+            <input type="text" name="coffee" id="coffee" list="coffee-list">
+            <datalist id="coffee-list">
+              
+                <option value="regular coffee">
+                <option value="iced coffee">
+                <option value="latte">
+                <option value="cappuccino" selected>
+                <option value="americano">
+                <option value="others">
+            </datalist>
+          </p>
         </form>
       </article>
     </main>
